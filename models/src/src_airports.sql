@@ -1,5 +1,5 @@
 WITH airports AS (
-    SELECT * FROM {{ ref('dbt_airstats', 'airports') }}
+    SELECT * FROM {{ source('dbt_airstats', 'airports') }}
 )
 
 SELECT
@@ -12,4 +12,4 @@ SELECT
     iso_country,
     iso_region,
     scheduled_service 
-FROM airports;
+FROM airports

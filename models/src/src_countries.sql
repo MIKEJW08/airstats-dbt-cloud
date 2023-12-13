@@ -1,5 +1,5 @@
 WITH countries AS (
-    SELECT * FROM {{ source('airstats', 'countries') }}
+    SELECT * FROM {{ source('dbt_airstats', 'countries') }}
 )
 
 SELECT
@@ -7,4 +7,4 @@ SELECT
     name as country_name,
     continent
 FROM
-    countries;
+    countries

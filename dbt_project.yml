@@ -38,4 +38,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   airstats_dbt_cloud:
     # Applies to all files under models/example/
-    +materialized: view
+    src:
+      +materialized: ephemeral
+    dim:
+      +materialized: view
+    mart:
+      +materialized: table
