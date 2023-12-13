@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: dbt_airstats
+    schema: raw
+    tables:
+      - name: airports
+        identifier: airports
+      
+      - name: airport_freqs
+        identifier: airport_frequencies
+      
+      - name: regions
+        identifier: regions
+      
+      - name: countries
+        identifier: countries
+    
+      - name: navaids
+        identifier: navaids
+
+      - name: runways
+        identifier: runways
