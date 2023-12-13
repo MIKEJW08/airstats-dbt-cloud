@@ -18,7 +18,9 @@ src_regions AS (
 )
 
 SELECT
-  a.*,
+  a.airport_ident,
+  a.airport_type,
+  a.iso_region,
   af.num_of_freqs,
   n.num_of_navaids,
   r.num_of_runways,
