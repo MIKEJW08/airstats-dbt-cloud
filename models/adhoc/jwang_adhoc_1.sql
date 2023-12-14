@@ -2,7 +2,6 @@
     config(
         materialized = 'view',
         alias = 'airport_by_freqs',
-        schema = 'adhoc'
     )
 }}
 
